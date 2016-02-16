@@ -1,0 +1,6 @@
+# AntiExpSteal by Nomic
+# Set min and max experience to give from exp bottle.
+# Set experience multiplier.
+expBottleGiveMin: 3
+expBottleGiveMax: 11
+expMultiplier: 1
