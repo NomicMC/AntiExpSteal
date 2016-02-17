@@ -1,6 +1,106 @@
 # AntiExpSteal by Nomic
 # Set min and max experience to give from exp bottle.
 # Set experience multiplier.
+# When setting min and max mobExp, don't set as same value.
+# Double the max to fix this (ex: min is 2, max is 4, mob will drop 2 exp).
+# If you are getting errors, its probably because of mobExp setup wrong.
 expBottleGiveMin: 3
 expBottleGiveMax: 11
 expMultiplier: 1
+mobExp:
+  enabled:
+    bat: false
+    blaze: true
+    caveSpider: true
+    chicken: true
+    cow: true
+    creeper: true
+    enderDragon: true
+    enderman: true
+    endermite: true
+    ghast: true
+    giant: false
+    guardian: true
+    horse: true
+    ironGolem: false
+    magmaCube: true
+    mushroomCow: true
+    ocelot: true
+    pig: true
+    pigZombie: true
+    rabbit: true
+    sheep: true
+    silverfish: true
+    skeleton: true
+    slime: true
+    spider: true
+    squid: true
+    villager: false
+    witch: true
+    wither: true
+    wolf: true
+    zombie: true
+  min:
+    bat: 1
+    blaze: 10
+    caveSpider: 5
+    chicken: 1
+    cow: 1
+    creeper: 5
+    enderDragon: 12000
+    enderman: 5
+    endermite: 3
+    ghast: 5
+    giant: 1
+    guardian: 10
+    horse: 1
+    ironGolem: 1
+    magmaCube: 5
+    mushroomCow: 1
+    ocelot: 1
+    pig: 1
+    pigZombie: 5
+    rabbit: 1
+    sheep: 1
+    silverfish: 5
+    skeleton: 5
+    slime: 2
+    spider: 5
+    squid: 1
+    villager: 1
+    witch: 5
+    wither: 50
+    wolf: 1
+    zombie: 5
+  max:
+    bat: 2
+    blaze: 20
+    caveSpider: 10
+    chicken: 3
+    cow: 3
+    creeper: 10
+    enderDragon: 24000
+    enderman: 10
+    endermite: 6
+    ghast: 10
+    giant: 2
+    guardian: 20
+    horse: 3
+    ironGolem: 2
+    magmaCube: 10
+    mushroomCow: 3
+    ocelot: 3
+    pig: 3
+    pigZombie: 10
+    rabbit: 3
+    sheep: 3
+    silverfish: 10
+    skeleton: 10
+    slime: 3
+    spider: 10
+    squid: 3
+    villager: 2
+    witch: 10
+    wither: 100
+    wolf: 3
+    zombie: 10
