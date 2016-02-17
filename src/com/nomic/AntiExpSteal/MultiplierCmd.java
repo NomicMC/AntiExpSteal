@@ -19,8 +19,10 @@ public class MultiplierCmd implements CommandExecutor {
 			sender.sendMessage("You must be a player to do this!");
 			return false;
 		}
-
+		
 		Player p = (Player) sender;
+		if (!(p.isOp())) // Cancel if not Op.
+			return false;
 		if (args.length == 0) {
 			p.sendMessage(ChatColor.RED + "Please enter a number for the multiplier.");
 		} else if (args.length == 1) {
