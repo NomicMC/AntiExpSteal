@@ -1,7 +1,7 @@
-main: com.nomic.AntiExpSteal.Main
-version: 2.0.0
-name: AntiExpSteal
+main: com.nomic.Levels.Main
+version: 2.1.0
+name: Levels
 
 commands:
-  expmult:
-    description: Change experience multiplier.
+  levels:
+    description: Main plugin command.

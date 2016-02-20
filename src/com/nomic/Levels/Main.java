@@ -1,4 +1,4 @@
-package com.nomic.AntiExpSteal;
+package com.nomic.Levels;
 
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -19,7 +19,7 @@ public class Main extends JavaPlugin {
 	}
 	
 	public void registerCommands() {
-		getCommand("expmult").setExecutor(new MultiplierCmd(this));
+		getCommand("levels").setExecutor(new Cmd(this));
 	}
 	
 	private void registerConfig() {

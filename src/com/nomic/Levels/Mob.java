@@ -1,4 +1,4 @@
-package com.nomic.AntiExpSteal;
+package com.nomic.Levels;
 
 import java.util.Random;
 
@@ -38,7 +38,7 @@ public class Mob implements Listener {
 				return;
 			int min = configmin.getInt("bat");
 			int max = configmax.getInt("bat");
-			p.giveExp(mult * min + new Random().nextInt(mult * (max - min)));
+			p.giveExp(mult * min + new Random().nextInt(mult* (max - min)));
 		}
 		if (mob == EntityType.BLAZE) {
 			e.setDroppedExp(0);
@@ -60,9 +60,9 @@ public class Mob implements Listener {
 			e.setDroppedExp(0);
 			if (!(confige.get("chicken").equals(true)))
 				return;
-				int min = configmin.getInt("chicken");
-				int max = configmax.getInt("chicken");
-				p.giveExp(mult * min + new Random().nextInt(mult * (max - min)));
+			int min = configmin.getInt("chicken");
+			int max = configmax.getInt("chicken");
+			p.giveExp(mult * min + new Random().nextInt(mult * (max - min)));
 		}
 		if (mob == EntityType.COW) {
 			e.setDroppedExp(0);
