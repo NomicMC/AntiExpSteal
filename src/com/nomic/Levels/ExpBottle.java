@@ -27,7 +27,7 @@ public class ExpBottle implements Listener {
 	     int min = plugin.getConfig().getInt("expBottleGiveMin");
 	     int max = plugin.getConfig().getInt("expBottleGiveMax");
 	     int mult = plugin.getConfig().getInt("expMultiplier");
-	     if (p.hasPermission("antisteal.expbottle") || p.isOp()) {
+	     if (p.hasPermission("levels.expbottle") || p.isOp()) {
 	     p.giveExp(mult * min + new Random().nextInt(mult * (max - min)));
 	     e.setCancelled(true);
 	   }

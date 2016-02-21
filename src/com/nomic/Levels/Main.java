@@ -16,6 +16,7 @@ public class Main extends JavaPlugin {
 		
 		pm.registerEvents(new ExpBottle(this), this);
 		pm.registerEvents(new Mob(this), this);
+		pm.registerEvents(new Block(this), this);
 	}
 	
 	public void registerCommands() {

@@ -1,106 +1,238 @@
 # AntiExpSteal by Nomic
-# Set min and max experience to give from exp bottle.
+# Set amount of experience to give from sources.
 # Set experience multiplier.
-# When setting min and max mobExp, don't set as same value.
+# When setting min and max values, don't set as same value.
 # Double the max to fix this (ex: min is 2, max is 4, mob will drop 2 exp).
 # If you are getting errors, its probably because of mobExp setup wrong.
 expBottleGiveMin: 3
 expBottleGiveMax: 11
 expMultiplier: 1
 mobExp:
-  enabled:
-    bat: false
-    blaze: true
-    caveSpider: true
-    chicken: true
-    cow: true
-    creeper: true
-    enderDragon: true
-    enderman: true
-    endermite: true
-    ghast: true
-    giant: false
-    guardian: true
-    horse: true
-    ironGolem: false
-    magmaCube: true
-    mushroomCow: true
-    ocelot: true
-    pig: true
-    pigZombie: true
-    rabbit: true
-    sheep: true
-    silverfish: true
-    skeleton: true
-    slime: true
-    spider: true
-    squid: true
-    villager: false
-    witch: true
-    wither: true
-    wolf: true
-    zombie: true
-  min:
-    bat: 1
-    blaze: 10
-    caveSpider: 5
-    chicken: 1
-    cow: 1
-    creeper: 5
-    enderDragon: 12000
-    enderman: 5
-    endermite: 3
-    ghast: 5
-    giant: 1
-    guardian: 10
-    horse: 1
-    ironGolem: 1
-    magmaCube: 5
-    mushroomCow: 1
-    ocelot: 1
-    pig: 1
-    pigZombie: 5
-    rabbit: 1
-    sheep: 1
-    silverfish: 5
-    skeleton: 5
-    slime: 2
-    spider: 5
-    squid: 1
-    villager: 1
-    witch: 5
-    wither: 50
-    wolf: 1
-    zombie: 5
-  max:
-    bat: 2
-    blaze: 20
-    caveSpider: 10
-    chicken: 3
-    cow: 3
-    creeper: 10
-    enderDragon: 24000
-    enderman: 10
-    endermite: 6
-    ghast: 10
-    giant: 2
-    guardian: 20
-    horse: 3
-    ironGolem: 2
-    magmaCube: 10
-    mushroomCow: 3
-    ocelot: 3
-    pig: 3
-    pigZombie: 10
-    rabbit: 3
-    sheep: 3
-    silverfish: 10
-    skeleton: 10
-    slime: 3
-    spider: 10
-    squid: 3
-    villager: 2
-    witch: 10
-    wither: 100
-    wolf: 3
-    zombie: 10
+  bat:
+    enabled: false
+    min: 1
+    max: 2
+  blaze:
+    enabled: true
+    min: 10
+    max: 20
+  caveSpider:
+    enabled: true
+    min: 5
+    max: 10
+  chicken:
+    enabled: true
+    min: 1
+    max: 3
+  cow:
+    enabled: true
+    min: 1
+    max: 3
+  creeper:
+    enabled: true
+    min: 5
+    max: 10
+  enderDragon:
+    enabled: true
+    min: 12000
+    max: 24000
+  enderman:
+    enabled: true
+    min: 5
+    max: 10
+  endermite:
+    enabled: true
+    min: 3
+    max: 6
+  ghast:
+    enabled: true
+    min: 5
+    max: 10
+  giant:
+    enabled: false
+    min: 1
+    max: 2
+  guardian: 
+    enabled: true
+    min: 10
+    max: 20
+  horse:
+    enabled: true
+    min: 1
+    max: 3
+  ironGolem:
+    enabled: false
+    min: 1
+    max: 2
+  magmaCube:
+    enabled: true
+    min: 5
+    max: 10
+  mushroomCow:
+    enabled: true
+    min: 1
+    max: 3
+  ocelot:
+    enabled: true
+    min: 1
+    max: 3
+  pig:
+    enabled: true
+    min: 1
+    max: 3
+  pigZombie:
+    enabled: true
+    min: 5
+    max: 10
+  rabbit:
+    enabled: true
+    min: 1
+    max: 3
+  sheep:
+    enabled: true
+    min: 1
+    max: 3
+  silverfish:
+    enabled: true
+    min: 5
+    max: 10
+  skeleton:
+    enabled: true
+    min: 5
+    max: 10
+  slime:
+    enabled: true
+    min: 2
+    max: 3
+  spider:
+    enabled: true
+    min: 5
+    max: 10
+  squid:
+    enabled: true
+    min: 1
+    max: 3
+  villager:
+    enabled: false
+    min: 1
+    max: 2
+  witch:
+    enabled: true
+    min: 5
+    max: 10
+  wither:
+    enabled: true
+    min: 50
+    max: 100
+  wolf:
+    enabled: true
+    min: 1
+    max: 3
+  zombie:
+    enabled: true
+    min: 5
+    max: 10
+blockExp:
+  coalOre:
+    enabled: true
+    min: 1
+    max: 2
+  diamondOre:
+    enabled: true
+    min: 3
+    max: 7
+  emeraldOre:
+    enabled: true
+    min: 3
+    max: 7
+  lapisOre:
+    enabled: true
+    min: 2
+    max: 5
+  redstoneOre:
+    enabled: true
+    min: 1
+    max: 5
+  quartzOre:
+    enabled: true
+    min: 2
+    max: 5
+  ironOre:
+    enabled: false
+    min: 1
+    max: 2
+  goldOre:
+    enabled: false
+    min: 1
+    max: 2
+  mobSpawner:
+    enabled: true
+    min: 15
+    max: 43
+smeltExp:
+  coalOre:
+    enabled: true
+    exp: 0.1
+  ironOre:
+    enabled: true
+    exp: 0.7
+  goldOre:
+    enabled: true
+    exp: 1
+  diamondOre:
+    enabled: true
+    exp: 1
+  emerladOre:
+    enabled: true
+    exp: 1
+  lapisOre:
+    enabled: true
+    exp: 0.2
+  redstoneOre:
+    enabled: true
+    exp: 0.7
+  quartzOre:
+    enabled: true
+    exp: 0.2
+  cobblestone:
+    enabled: true
+    exp: 0.1
+  sand:
+    enabled: true
+    exp: 0.1
+  netherrack:
+    enabled: true
+    exp: 0.1
+  stonebrick:
+    enabled: true
+    exp: 0.1
+  wood:
+    enabled: true
+    exp: 0.15
+  wetSponge:
+    enabled: true
+    exp: 0.15
+  clayBall:
+    enabled: true
+    exp: 0.3
+  potato:
+    enabled: true
+    exp: 0.35
+  rawBeef:
+    enabled: true
+    exp: 0.35
+  rawChicken:
+    enabled: true
+    exp: 0.35
+  rawMutton:
+    enabled: true
+    exp: 0.35
+  rawRabbit:
+    enabled: true
+    exp: 0.35
+  rawFish:
+    enabled: true
+    exp: 0.35
+  rawPorkchop:
+    enabled: true
+    exp: 0.35
