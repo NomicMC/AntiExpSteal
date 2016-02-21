@@ -33,7 +33,15 @@ public class Block implements Listener {
 				return;
 			int min = config.getConfigurationSection("coalOre").getInt("min");
 			int max = config.getConfigurationSection("coalOre").getInt("max");
-			p.giveExp(mult * min + new Random().nextInt(mult* (max - min)));
+			if (!(p.hasPermission("levels.double") || p.hasPermission("levels.triple"))) {
+				p.giveExp(mult * min + new Random().nextInt(mult * (max - min)));
+			}
+			if (p.hasPermission("levels.double")) {
+				p.giveExp(2 * (mult * min + new Random().nextInt(mult * (max - min))));
+			}
+			if (p.hasPermission("levels.triple")) {
+				p.giveExp(3 * (mult * min + new Random().nextInt(mult * (max - min))));
+			}
 		}
 		if (b == Material.DIAMOND_ORE) {
 			e.setExpToDrop(0);
@@ -41,7 +49,15 @@ public class Block implements Listener {
 				return;
 			int min = config.getConfigurationSection("diamondOre").getInt("min");
 			int max = config.getConfigurationSection("diamondOre").getInt("max");
-			p.giveExp(mult * min + new Random().nextInt(mult* (max - min)));
+			if (!(p.hasPermission("levels.double") || p.hasPermission("levels.triple"))) {
+				p.giveExp(mult * min + new Random().nextInt(mult * (max - min)));
+			}
+			if (p.hasPermission("levels.double")) {
+				p.giveExp(2 * (mult * min + new Random().nextInt(mult * (max - min))));
+			}
+			if (p.hasPermission("levels.triple")) {
+				p.giveExp(3 * (mult * min + new Random().nextInt(mult * (max - min))));
+			}
 		}
 		if (b == Material.EMERALD_ORE) {
 			e.setExpToDrop(0);
@@ -49,7 +65,15 @@ public class Block implements Listener {
 				return;
 			int min = config.getConfigurationSection("emeraldOre").getInt("min");
 			int max = config.getConfigurationSection("emeraldOre").getInt("max");
-			p.giveExp(mult * min + new Random().nextInt(mult* (max - min)));
+			if (!(p.hasPermission("levels.double") || p.hasPermission("levels.triple"))) {
+				p.giveExp(mult * min + new Random().nextInt(mult * (max - min)));
+			}
+			if (p.hasPermission("levels.double")) {
+				p.giveExp(2 * (mult * min + new Random().nextInt(mult * (max - min))));
+			}
+			if (p.hasPermission("levels.triple")) {
+				p.giveExp(3 * (mult * min + new Random().nextInt(mult * (max - min))));
+			}
 		}
 		if (b == Material.LAPIS_ORE) {
 			e.setExpToDrop(0);
@@ -57,7 +81,15 @@ public class Block implements Listener {
 				return;
 			int min = config.getConfigurationSection("lapisOre").getInt("min");
 			int max = config.getConfigurationSection("lapisOre").getInt("max");
-			p.giveExp(mult * min + new Random().nextInt(mult* (max - min)));
+			if (!(p.hasPermission("levels.double") || p.hasPermission("levels.triple"))) {
+				p.giveExp(mult * min + new Random().nextInt(mult * (max - min)));
+			}
+			if (p.hasPermission("levels.double")) {
+				p.giveExp(2 * (mult * min + new Random().nextInt(mult * (max - min))));
+			}
+			if (p.hasPermission("levels.triple")) {
+				p.giveExp(3 * (mult * min + new Random().nextInt(mult * (max - min))));
+			}
 		}
 		if (b == Material.REDSTONE_ORE) {
 			e.setExpToDrop(0);
@@ -65,7 +97,15 @@ public class Block implements Listener {
 				return;
 			int min = config.getConfigurationSection("redstoneOre").getInt("min");
 			int max = config.getConfigurationSection("redstoneOre").getInt("max");
-			p.giveExp(mult * min + new Random().nextInt(mult* (max - min)));
+			if (!(p.hasPermission("levels.double") || p.hasPermission("levels.triple"))) {
+				p.giveExp(mult * min + new Random().nextInt(mult * (max - min)));
+			}
+			if (p.hasPermission("levels.double")) {
+				p.giveExp(2 * (mult * min + new Random().nextInt(mult * (max - min))));
+			}
+			if (p.hasPermission("levels.triple")) {
+				p.giveExp(3 * (mult * min + new Random().nextInt(mult * (max - min))));
+			}
 		}
 		if (b == Material.QUARTZ_ORE) {
 			e.setExpToDrop(0);
@@ -73,7 +113,15 @@ public class Block implements Listener {
 				return;
 			int min = config.getConfigurationSection("quartzOre").getInt("min");
 			int max = config.getConfigurationSection("quartzOre").getInt("max");
-			p.giveExp(mult * min + new Random().nextInt(mult* (max - min)));
+			if (!(p.hasPermission("levels.double") || p.hasPermission("levels.triple"))) {
+				p.giveExp(mult * min + new Random().nextInt(mult * (max - min)));
+			}
+			if (p.hasPermission("levels.double")) {
+				p.giveExp(2 * (mult * min + new Random().nextInt(mult * (max - min))));
+			}
+			if (p.hasPermission("levels.triple")) {
+				p.giveExp(3 * (mult * min + new Random().nextInt(mult * (max - min))));
+			}
 		}
 		if (b == Material.IRON_ORE) {
 			e.setExpToDrop(0);
@@ -81,7 +129,15 @@ public class Block implements Listener {
 				return;
 			int min = config.getConfigurationSection("ironOre").getInt("min");
 			int max = config.getConfigurationSection("ironOre").getInt("max");
-			p.giveExp(mult * min + new Random().nextInt(mult* (max - min)));
+			if (!(p.hasPermission("levels.double") || p.hasPermission("levels.triple"))) {
+				p.giveExp(mult * min + new Random().nextInt(mult * (max - min)));
+			}
+			if (p.hasPermission("levels.double")) {
+				p.giveExp(2 * (mult * min + new Random().nextInt(mult * (max - min))));
+			}
+			if (p.hasPermission("levels.triple")) {
+				p.giveExp(3 * (mult * min + new Random().nextInt(mult * (max - min))));
+			}
 		}
 		if (b == Material.GOLD_ORE) {
 			e.setExpToDrop(0);
@@ -89,7 +145,15 @@ public class Block implements Listener {
 				return;
 			int min = config.getConfigurationSection("goldOre").getInt("min");
 			int max = config.getConfigurationSection("goldOre").getInt("max");
-			p.giveExp(mult * min + new Random().nextInt(mult* (max - min)));
+			if (!(p.hasPermission("levels.double") || p.hasPermission("levels.triple"))) {
+				p.giveExp(mult * min + new Random().nextInt(mult * (max - min)));
+			}
+			if (p.hasPermission("levels.double")) {
+				p.giveExp(2 * (mult * min + new Random().nextInt(mult * (max - min))));
+			}
+			if (p.hasPermission("levels.triple")) {
+				p.giveExp(3 * (mult * min + new Random().nextInt(mult * (max - min))));
+			}
 		}
 		if (b == Material.MOB_SPAWNER) {
 			e.setExpToDrop(0);
@@ -97,7 +161,15 @@ public class Block implements Listener {
 				return;
 			int min = config.getConfigurationSection("mobSpawner").getInt("min");
 			int max = config.getConfigurationSection("mobSpawner").getInt("max");
-			p.giveExp(mult * min + new Random().nextInt(mult* (max - min)));
+			if (!(p.hasPermission("levels.double") || p.hasPermission("levels.triple"))) {
+				p.giveExp(mult * min + new Random().nextInt(mult * (max - min)));
+			}
+			if (p.hasPermission("levels.double")) {
+				p.giveExp(2 * (mult * min + new Random().nextInt(mult * (max - min))));
+			}
+			if (p.hasPermission("levels.triple")) {
+				p.giveExp(3 * (mult * min + new Random().nextInt(mult * (max - min))));
+			}
 		}
 	}
 }

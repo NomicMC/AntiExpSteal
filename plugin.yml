@@ -1,5 +1,5 @@
 main: com.nomic.Levels.Main
-version: 2.1.0
+version: 2.1.1
 name: Levels
 commands:
   levels:
