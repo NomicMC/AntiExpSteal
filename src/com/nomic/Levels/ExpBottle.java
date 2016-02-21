@@ -28,14 +28,16 @@ public class ExpBottle implements Listener {
 		int max = plugin.getConfig().getInt("expBottleGiveMax");
 		int mult = plugin.getConfig().getInt("expMultiplier");
 		if (p.hasPermission("levels.expbottle")) {
-			if (!(p.hasPermission("levels.double") || p.hasPermission("levels.triple"))) {
-				p.giveExp(mult * (min + new Random().nextInt(max - min)));
-			}
-			if (p.hasPermission("levels.double")) {
-				p.giveExp(2 * (mult * (min + new Random().nextInt(max - min))));
-			}
-			if (p.hasPermission("levels.triple")) {
-				p.giveExp(3 * (mult * (min + new Random().nextInt(max - min))));
+			if (min > 0 && max > 1 && (min != max)) {
+			    if (!(p.hasPermission("levels.double") || p.hasPermission("levels.triple"))) {
+					p.giveExp(mult * min + new Random().nextInt(mult * (max - min)));
+				}
+			    if (p.hasPermission("levels.double")) {
+				    p.giveExp(2 * (mult * min + new Random().nextInt(mult * (max - min))));
+			    }
+			    if (p.hasPermission("levels.triple")) {
+				    p.giveExp(3 * (mult * min + new Random().nextInt(mult * (max - min))));
+			    }
 			}
 			e.setCancelled(true);
 		}

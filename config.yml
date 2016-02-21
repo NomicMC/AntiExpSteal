@@ -1,171 +1,132 @@
-# AntiExpSteal by Nomic
+# Levels by Nomic
 # Set amount of experience to give from sources.
 # Set experience multiplier.
-# When setting min and max values, don't set as same value.
-# Double the max to fix this (ex: min is 2, max is 4, mob will drop 2 exp).
-# If you are getting errors, its probably because of mobExp setup wrong.
+# Do not set min & max values to same value (exception is zero).
+# Setting min & max values to zero will disable exp source.
+# Min value must be above '0' and max value must be above '1'.
+# To set constant value, double max (ex: min = 2, max = 4, will give 2 exp).
 expBottleGiveMin: 3
 expBottleGiveMax: 11
 expMultiplier: 1
 mobExp:
   bat:
-    enabled: false
-    min: 1
-    max: 2
+    min: 0
+    max: 0
   blaze:
-    enabled: true
     min: 10
     max: 20
   caveSpider:
-    enabled: true
     min: 5
     max: 10
   chicken:
-    enabled: true
     min: 1
     max: 3
   cow:
-    enabled: true
     min: 1
     max: 3
   creeper:
-    enabled: true
     min: 5
     max: 10
   enderDragon:
-    enabled: true
     min: 12000
     max: 24000
   enderman:
-    enabled: true
     min: 5
     max: 10
   endermite:
-    enabled: true
     min: 3
     max: 6
   ghast:
-    enabled: true
     min: 5
     max: 10
   giant:
-    enabled: false
-    min: 1
-    max: 2
+    min: 0
+    max: 0
   guardian: 
-    enabled: true
     min: 10
     max: 20
   horse:
-    enabled: true
     min: 1
     max: 3
   ironGolem:
-    enabled: false
-    min: 1
-    max: 2
+    min: 0
+    max: 0
   magmaCube:
-    enabled: true
     min: 5
     max: 10
   mushroomCow:
-    enabled: true
     min: 1
     max: 3
   ocelot:
-    enabled: true
     min: 1
     max: 3
   pig:
-    enabled: true
     min: 1
     max: 3
   pigZombie:
-    enabled: true
     min: 5
     max: 10
   rabbit:
-    enabled: true
     min: 1
     max: 3
   sheep:
-    enabled: true
     min: 1
     max: 3
   silverfish:
-    enabled: true
     min: 5
     max: 10
   skeleton:
-    enabled: true
     min: 5
     max: 10
   slime:
-    enabled: true
     min: 2
     max: 3
   spider:
-    enabled: true
     min: 5
     max: 10
   squid:
-    enabled: true
     min: 1
     max: 3
   villager:
-    enabled: false
-    min: 1
-    max: 2
+    min: 0
+    max: 0
   witch:
-    enabled: true
     min: 5
     max: 10
   wither:
-    enabled: true
     min: 50
     max: 100
   wolf:
-    enabled: true
     min: 1
     max: 3
   zombie:
-    enabled: true
     min: 5
     max: 10
 blockExp:
   coalOre:
-    enabled: true
     min: 1
     max: 2
   diamondOre:
-    enabled: true
     min: 3
     max: 7
   emeraldOre:
-    enabled: true
     min: 3
     max: 7
   lapisOre:
-    enabled: true
     min: 2
     max: 5
   redstoneOre:
-    enabled: true
     min: 1
     max: 5
   quartzOre:
-    enabled: true
     min: 2
     max: 5
   ironOre:
-    enabled: false
-    min: 1
-    max: 2
+    min: 0
+    max: 0
   goldOre:
-    enabled: false
-    min: 1
-    max: 2
+    min: 0
+    max: 0
   mobSpawner:
-    enabled: true
     min: 15
     max: 43
